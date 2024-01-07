@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\PemesananController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
@@ -16,7 +17,18 @@ use Inertia\Inertia;
 |
 */
 
-Route::get('/', function () {
+
+
+// Route::get('/', function () {
+//     return Inertia::render('Home');
+// });
+// HomePage
+Route::get('/', [PemesananController::class, 'index']);
+Route::get('/{id}', [PemesananController::class, 'show']);
+
+
+
+Route::get('/welcome', function () {
     return Inertia::render('Welcome', [
         'canLogin' => Route::has('login'),
         'canRegister' => Route::has('register'),
@@ -35,4 +47,4 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
-require __DIR__.'/auth.php';
+require __DIR__ . '/auth.php';
