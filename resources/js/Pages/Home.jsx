@@ -72,7 +72,6 @@ export default function Home(props) {
 
             <div className="container mx-auto mt-6 px-6">
                 {/* product */}
-
                 <h1 className="mb-5 text-5xl font-bold">Menu Makanan</h1>
                 <div className="grid grid-cols-4 gap-4 justify-around">
                     <ProductCard
@@ -152,10 +151,8 @@ export default function Home(props) {
                     Beli
                 </button>
                 {/* )} */}
-
                 {/* Detail Pesanan */}
                 <h1 className="mb-5 text-5xl font-bold mt-6">Detail Pesanan</h1>
-
                 {props.pemesanan ? (
                     <div>
                         <div className="overflow-x-auto">
@@ -213,6 +210,7 @@ export default function Home(props) {
                         Belum Melakukan Pemesanan
                     </h1>
                 )}
+                {/* About */}
             </div>
 
             <Footer />
