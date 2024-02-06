@@ -1,18 +1,3 @@
-## How to run
-First download Database [saresto](https://drive.google.com/file/d/1FUK3FRG6ymKS7UOTjMNp-5IlmxhNjsaS/view?usp=sharing)
-> Install package:
-```bash
-npm install
-```
-> Run in terminal:
-```bash
-npm run dev
-```
-```bash
-php artisan serve
-```
-Note: Run two codes in different terminal taps or in different terminals
-
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
@@ -21,6 +6,67 @@ Note: Run two codes in different terminal taps or in different terminals
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
+
+## Getting Started
+
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
+
+### Prerequisites
+
+Make sure you have the following software installed on your machine:
+
+- [PHP](https://www.php.net/) (recommended version: PHP 7.4 or higher)
+- [Composer](https://getcomposer.org/)
+- [Node.js](https://nodejs.org/) (recommended version: Node.js 14.x or higher)
+- [npm](https://www.npmjs.com/) (comes with Node.js)
+- [Git](https://git-scm.com/)
+- [Database](https://drive.google.com/file/d/1FUK3FRG6ymKS7UOTjMNp-5IlmxhNjsaS/view?usp=sharing) (name database saresto)
+
+### Installation
+
+1. **Clone the repository** to your local machine and open project:
+
+    ```bash
+    git clone https://github.com/AffanSurya/sa-resto.git
+    ```
+
+2. **Install PHP dependencies** using Composer:
+
+    ```bash
+    composer install
+    ```
+
+3. **Install JavaScript dependencies** using npm:
+
+    ```bash
+    npm install
+    ```
+
+4. **Copy the `.env.example` file** and rename it to `.env`:
+
+    ```bash
+    cp .env.example .env
+    ```
+
+5. **Generate a new application key**:
+
+    ```bash
+    php artisan key:generate
+    ```
+
+6. **If your project involves a database**, migrate the database:
+
+    ```bash
+    php artisan migrate
+    ```
+
+### Development
+
+To start the development server, run the following command:
+
+```bash
+npm run dev
+```
 
 ## About Laravel
 
